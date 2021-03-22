@@ -12,5 +12,5 @@ public class Order {
     private String zip;
     private String ccNumber;
     private String ccExpiration;
-    private String ccCvv;
+    private String ccCVV;
 }
