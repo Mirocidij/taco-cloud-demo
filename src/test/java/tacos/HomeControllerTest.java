@@ -31,9 +31,4 @@ class HomeControllerTest {
 			.andExpect(content().string(
 				containsString("Welcome to Taco Cloud")));
 	}
-
-	@Test
-	void jenkinsTestingTest() throws Exception {
-		Assertions.assertEquals(10, 9);
-	}
 }
