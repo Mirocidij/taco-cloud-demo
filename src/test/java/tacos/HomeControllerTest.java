@@ -6,6 +6,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +30,10 @@ class HomeControllerTest {
 			.andExpect(view().name("home"))
 			.andExpect(content().string(
 				containsString("Welcome to Taco Cloud")));
+	}
+
+	@Test
+	void jenkinsTestingTest() throws Exception {
+		Assertions.assertEquals(10, 9);
 	}
 }
